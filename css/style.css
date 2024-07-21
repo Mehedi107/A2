@@ -335,6 +335,95 @@ img {
   grid-column: 4/ 5;
 }
 
+/* ************************** */
+/*     Section Calculate      */
+/* ************************** */
+.section-calculate {
+  padding: var(--padding-section);
+  text-align: center;
+}
+
+.section-calculate-container {
+  background-color: var(--color-gray-dark);
+  padding: 7rem 0;
+}
+
+.section-calculate-container > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-calculate-container > div > div {
+  width: 50%;
+  text-align: left;
+}
+
+.bmi-chart {
+  border-collapse: collapse;
+}
+
+.section-calculate-chart-title {
+  margin-bottom: 5rem;
+}
+
+.bmi-chart thead td {
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.bmi-chart td {
+  border: 1px solid var(--color-gray);
+  padding: 1.5rem 5rem;
+  color: var(--color-gray);
+}
+
+.section-calculate-form-description {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.bmi-calculate-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.bmi-calculate-form input,
+.bmi-calculate-form select {
+  display: block;
+  padding: 2rem;
+  background-color: var(--color-gray);
+  border: none;
+  border-radius: 1rem;
+  font-size: 2rem;
+  color: var(--color-gray-dark);
+}
+
+.bmi-calculate-form input::placeholder {
+  color: var(--color-gray-dark);
+}
+
+.bmi-calculate-form input:focus,
+.bmi-calculate-form select:focus {
+  border: 2px solid var(--color-primary);
+  outline: none;
+}
+
+.bmi-calculate-form .activity {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+}
+
+.bmi-calculate-form input[type='submit'] {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  padding: 2rem 6rem;
+  border-radius: 5rem;
+  background-color: var(--color-primary);
+  transition: all 0.3s;
+  margin-top: 3rem;
+}
 /* 
 - primary-color: 
 - secondary-color: 
