@@ -1,13 +1,13 @@
 /* ************************** */
-/*       GENERAL STYLES       */
+/*       Shared Styles        */
 /* ************************** */
 :root {
-  --color-primary: orangered;
-  --color-primary-light: rgb(255, 87, 25);
-  --color-secondary: #fff;
+  --color-primary: #ff4500;
+  --color-primary-light: #ff5719;
+  --color-secondary: #eee;
   --color-tertiary: #a9a9a9;
-  --color-gray: #999;
-  --color-gray-dark: #333;
+  --color-gray: #555;
+  --color-gray-dark: #111;
   --color-black: #000;
 
   --padding-section: 10rem 0 10rem 0;
@@ -73,6 +73,7 @@ img {
   margin: 0 auto;
 }
 
+/* Button */
 .btn {
   font-size: 2.4rem;
   font-weight: 500;
@@ -90,6 +91,19 @@ img {
 .btn-join:hover,
 .btn-primary:hover {
   background-color: var(--color-primary-light);
+}
+
+.btn-download,
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid var(--color-secondary);
+  transition: all 0.3s;
+}
+
+.btn-download:hover,
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 /* ************************** */
@@ -163,17 +177,6 @@ img {
   gap: 4rem;
 }
 
-.btn-download {
-  background-color: transparent;
-  border: 2px solid var(--color-secondary);
-  transition: all 0.3s;
-}
-
-.btn-download:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
-}
-
 .hero-img-container {
   position: relative;
 }
@@ -215,6 +218,10 @@ img {
   position: absolute;
   bottom: 0;
   left: -10rem;
+}
+
+.hero-badge-description {
+  color: var(--color-tertiary);
 }
 
 .hero-img {
@@ -313,6 +320,7 @@ img {
 
 .section-training-gallery-img--1 {
   grid-column: 1 / 2;
+  /* filter: ; */
 }
 
 .section-training-gallery-img--2 {
@@ -346,6 +354,7 @@ img {
 .section-calculate-container {
   background-color: var(--color-gray-dark);
   padding: 7rem 0;
+  margin-top: 7rem;
 }
 
 .section-calculate-container > div {
@@ -423,7 +432,49 @@ img {
   background-color: var(--color-primary);
   transition: all 0.3s;
   margin-top: 3rem;
+  cursor: pointer;
 }
+
+.bmi-calculate-form input[type='submit']:hover {
+  background-color: var(--color-primary-light);
+}
+
+/* ************************** */
+/*        Section Team        */
+/* ************************** */
+.section-team {
+  text-align: center;
+  padding: var(--padding-section);
+}
+
+.section-team-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 3rem;
+  background-color: var(--color-gray-dark);
+  border-radius: 2rem;
+}
+
+.team-gallery {
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.team-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-gallery-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  text-align: left;
+}
+
 /* 
 - primary-color: 
 - secondary-color: 
