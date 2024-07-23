@@ -1,6 +1,135 @@
-/* ***************************** */
-/*      Screen Size (992px)      */
-/* ***************************** */
+/******** Screen Size (992px) ********/
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
+  :root {
+    --padding-section: 10rem 5rem;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  h2 {
+    font-size: 4.4rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  /******** Section Hero ********/
+  .header {
+    height: auto;
+  }
+
+  .nav {
+    padding: 5rem 3rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .section-hero {
+    flex-direction: column;
+    gap: 10rem;
+    height: auto;
+    padding: 0 5rem;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 6.2rem;
+  }
+
+  .hero-badge--1 {
+    right: -3rem;
+  }
+
+  .hero-badge--2 {
+    left: -3rem;
+  }
+
+  /******** Section Habit ********/
+  .habit-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10rem;
+  }
+
+  /******** Section Run ********/
+  .section-run {
+    padding: var(--padding-section);
+  }
+
+  .section-run-container {
+    padding: 5rem;
+  }
+
+  .section-run-container {
+    flex-direction: column;
+  }
+
+  .section-run-container-text,
+  .section-run-container-img {
+    width: 100%;
+  }
+
+  /******** Section Training ********/
+  .section-training {
+    text-align: left;
+    padding-bottom: 5rem;
+  }
+
+  .section-training-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /******** Section Calculate ********/
+  .section-calculate {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-calculate > .container {
+    padding: 0 3rem;
+  }
+
+  .section-calculate-container {
+    padding: 0;
+  }
+
+  .section-calculate-container > div {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-calculate-container > div > div {
+    width: 100%;
+    text-align: left;
+    padding: 5rem;
+  }
+
+  .bmi-chart {
+    width: 100%;
+  }
+
+  .bmi-calculate-form input,
+  .bmi-calculate-form select {
+    width: 100%;
+  }
+  /******** Section Team ********/
+  .section-team-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 5rem;
+  }
+
+  /******** Footer ********/
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-top-content {
+    width: 100%;
+  }
 }

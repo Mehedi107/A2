@@ -1,13 +1,11 @@
-/* ************************** */
-/*       Shared Styles        */
-/* ************************** */
+/******** Shared Styles ********/
 :root {
-  --color-primary: #ff4500;
-  --color-primary-light: #ff5719;
+  --color-primary: #a53b14;
+  --color-primary-light: #ff6026;
   --color-secondary: #eee;
   --color-tertiary: #a9a9a9;
-  --color-gray: #555;
-  --color-gray-dark: #111;
+  --color-gray: #555555;
+  --color-gray-dark: #1d1d1d;
   --color-black: #000;
 
   --padding-section: 10rem 0 10rem 0;
@@ -69,7 +67,7 @@ img {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -106,11 +104,9 @@ img {
   color: var(--color-primary);
 }
 
-/* ************************** */
-/*        Section Hero        */
-/* ************************** */
+/******** Section Hero ********/
 .header {
-  background: linear-gradient(to bottom, #000, #000000df, #000);
+  background: linear-gradient(to bottom, #000, #272727, #000);
   height: 100vh;
 }
 
@@ -123,7 +119,7 @@ img {
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 3.6rem;
   color: var(--color-primary);
   font-weight: 800;
 }
@@ -145,6 +141,11 @@ img {
   display: inline-block;
   padding: 1rem 2.5rem;
   border-radius: 5rem;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  background-color: var(--color-primary);
 }
 
 .nav-link.active {
@@ -182,11 +183,11 @@ img {
 }
 
 .hero-badge {
-  width: 25rem;
+  width: 27rem;
   padding: 2.5rem;
   border-radius: 1rem;
-  border: 2px solid rgba(119, 119, 119, 0.7);
-  background-color: rgba(119, 119, 119, 0.5);
+  border: 2px solid rgba(85, 85, 85, 0.5);
+  background-color: rgba(85, 85, 85, 0.5);
   z-index: 1;
 }
 
@@ -200,7 +201,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .hero-badge--2 > :first-child {
@@ -210,8 +211,11 @@ img {
   border-radius: 50%;
 }
 
+.hero-badge--1 h3,
 .hero-badge--2 h3 {
-  font-size: 3rem;
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
 }
 
 .hero-badge--2 {
@@ -228,18 +232,16 @@ img {
   scale: 1.1;
 }
 
-/* ************************** */
-/*        Section Habit       */
-/* ************************** */
+/******** Section Habit ********/
 .section-habit {
-  /* padding: 10rem 0 10rem 0; */
   padding: var(--padding-section);
   background-color: var(--color-black);
   text-align: center;
 }
 
 .habit-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
   margin-top: 7rem;
 }
@@ -250,7 +252,7 @@ img {
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid var(--color-gray-dark);
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .habit-grid-content-title {
@@ -258,9 +260,7 @@ img {
   margin-bottom: 1rem;
 }
 
-/* ************************** */
-/*        Section Run         */
-/* ************************** */
+/******** Section Run ********/
 .section-run {
   background-color: var(--color-black);
   padding: 7rem 0 11rem 0;
@@ -294,11 +294,12 @@ img {
 
 .section-run-container-img img {
   border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* ************************** */
-/*     Section Training       */
-/* ************************** */
+/******** Section Training ********/
 .section-training {
   padding: var(--padding-section);
   text-align: center;
@@ -320,7 +321,6 @@ img {
 
 .section-training-gallery-img--1 {
   grid-column: 1 / 2;
-  /* filter: ; */
 }
 
 .section-training-gallery-img--2 {
@@ -343,9 +343,7 @@ img {
   grid-column: 4/ 5;
 }
 
-/* ************************** */
-/*     Section Calculate      */
-/* ************************** */
+/******** Section Calculate ********/
 .section-calculate {
   padding: var(--padding-section);
   text-align: center;
@@ -401,15 +399,19 @@ img {
 .bmi-calculate-form select {
   display: block;
   padding: 2rem;
-  background-color: var(--color-gray);
+  background-color: rgba(85, 85, 85, 0.6);
   border: none;
   border-radius: 1rem;
   font-size: 2rem;
+  color: var(--color-tertiary);
+}
+
+select option {
   color: var(--color-gray-dark);
 }
 
 .bmi-calculate-form input::placeholder {
-  color: var(--color-gray-dark);
+  color: var(--color-tertiary);
 }
 
 .bmi-calculate-form input:focus,
@@ -439,9 +441,7 @@ img {
   background-color: var(--color-primary-light);
 }
 
-/* ************************** */
-/*        Section Team        */
-/* ************************** */
+/******** Section Team ********/
 .section-team {
   text-align: center;
   padding: var(--padding-section);
@@ -475,9 +475,7 @@ img {
   text-align: left;
 }
 
-/* ************************** */
-/*           Footer           */
-/* ************************** */
+/******** Footer ********/
 .footer {
   padding: var(--padding-section);
   padding-bottom: 5rem;
@@ -487,7 +485,6 @@ img {
 .footer-top {
   display: flex;
   gap: 10rem;
-  /* justify-content: space-evenly; */
 }
 .footer-top-content--1 {
   width: 40%;
@@ -525,10 +522,6 @@ img {
 }
 
 /* 
-- primary-color: 
-- secondary-color: 
-- TINTS COLOR: 
-
 - SPACING SYSTEM (PX)2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 - FONT SIZE SYSTEM (PX)10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /52 / 62 / 74 / 86 / 98
 */
