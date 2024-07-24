@@ -261,6 +261,7 @@ img {
 }
 
 /******** Section Run ********/
+
 .section-run {
   background-color: var(--color-black);
   padding: 7rem 0 11rem 0;
@@ -488,16 +489,20 @@ select option {
 }
 
 .footer-top {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
   gap: 10rem;
 }
-.footer-top-content--1 {
-  width: 40%;
+.footer-top-branding {
+  grid-column: 1 / 5;
 }
 
-.footer-top-content--2,
-.footer-top-content--3 {
-  width: 30%;
+.footer-top-content--1 {
+  grid-column: 5 / 8;
+}
+
+.footer-top-content--2 {
+  grid-column: 8 / -1;
 }
 
 .footer-logo {
