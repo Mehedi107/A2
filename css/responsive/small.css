@@ -1,7 +1,7 @@
 /******** Screen Size (max: 768px) ********/
 @media (max-width: 768px) {
   :root {
-    --padding-section: 10rem 5rem;
+    --padding-section: 10rem 7rem;
   }
 
   html {
@@ -35,6 +35,19 @@
     height: auto;
     padding: 0 5rem;
     justify-content: center;
+    align-items: normal;
+  }
+
+  .hero-title {
+    font-size: 7.2rem;
+  }
+
+  .hero-badge--1 {
+    right: -3rem;
+  }
+
+  .hero-badge--2 {
+    left: -3rem;
   }
 
   /******** Section Habit ********/
@@ -63,7 +76,29 @@
 
   /******** Section Training ********/
   .section-training-gallery {
-    grid-template-rows: repeat(2, 15rem);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 20rem);
+  }
+
+  .section-training-gallery-img--1 {
+    grid-column: 1 / 2;
+  }
+
+  .section-training-gallery-img--2 {
+    grid-column: 2 / 3;
+  }
+
+  .section-training-gallery-img--3 {
+    grid-column: 1/ 2;
+  }
+
+  .section-training-gallery-img--4 {
+    grid-column: 2 / 3;
+  }
+
+  .section-training-gallery-img--5,
+  .section-training-gallery-img--6 {
+    display: none;
   }
 
   /******** Section Calculate ********/
@@ -123,14 +158,6 @@
     font-size: 6.2rem;
   }
 
-  .hero-badge--1 {
-    right: -3rem;
-  }
-
-  .hero-badge--2 {
-    left: -3rem;
-  }
-
   .btn-container {
     flex-direction: column;
   }
@@ -145,10 +172,6 @@
   .section-training {
     text-align: left;
     padding-bottom: 5rem;
-  }
-
-  .section-training-gallery {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   /******** Section Team ********/
