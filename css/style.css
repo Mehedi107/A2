@@ -475,6 +475,10 @@ select option {
   text-align: left;
 }
 
+.team-gallery-description {
+  color: var(--color-secondary);
+}
+
 /******** Footer ********/
 .footer {
   padding: var(--padding-section);

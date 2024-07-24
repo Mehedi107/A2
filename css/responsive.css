@@ -1,6 +1,5 @@
-/******** Screen Size (992px) ********/
-
-@media (max-width: 576px) {
+/******** Screen Size (max: 768px) ********/
+@media (max-width: 768px) {
   :root {
     --padding-section: 10rem 5rem;
   }
@@ -38,21 +37,9 @@
     justify-content: center;
   }
 
-  .hero-title {
-    font-size: 6.2rem;
-  }
-
-  .hero-badge--1 {
-    right: -3rem;
-  }
-
-  .hero-badge--2 {
-    left: -3rem;
-  }
-
   /******** Section Habit ********/
   .habit-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10rem;
   }
 
@@ -75,18 +62,13 @@
   }
 
   /******** Section Training ********/
-  .section-training {
-    text-align: left;
-    padding-bottom: 5rem;
-  }
-
   .section-training-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 15rem);
   }
 
   /******** Section Calculate ********/
   .section-calculate {
-    text-align: left;
+    text-align: center;
     padding-left: 0;
     padding-right: 0;
   }
@@ -118,9 +100,10 @@
   .bmi-calculate-form select {
     width: 100%;
   }
+
   /******** Section Team ********/
   .section-team-gallery {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 5rem;
   }
 
@@ -131,5 +114,46 @@
 
   .footer-top-content {
     width: 100%;
+  }
+}
+
+/******** Screen Size (max: 576px) ********/
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 6.2rem;
+  }
+
+  .hero-badge--1 {
+    right: -3rem;
+  }
+
+  .hero-badge--2 {
+    left: -3rem;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  /******** Section Habit ********/
+  .habit-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10rem;
+  }
+
+  /******** Section Training ********/
+  .section-training {
+    text-align: left;
+    padding-bottom: 5rem;
+  }
+
+  .section-training-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /******** Section Team ********/
+  .section-team-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 5rem;
   }
 }
