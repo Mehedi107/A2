@@ -1,5 +1,9 @@
 /******** Screen Size (max: 768px) ********/
 @media (max-width: 768px) {
+  :root {
+    --padding-section: 8rem 3rem;
+  }
+
   html {
     font-size: 50%;
   }
