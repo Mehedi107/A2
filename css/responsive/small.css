@@ -67,6 +67,12 @@
     display: none;
   }
 
+  /******** Section Calculate ********/
+
+  .bmi-chart td {
+    padding: 1.5rem 2rem;
+  }
+
   /******** Section Team ********/
   .section-team-gallery {
     grid-template-columns: repeat(2, 1fr);
