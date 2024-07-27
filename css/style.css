@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 /******** Shared Styles ********/
 :root {
-  --color-primary: #a53b14;
-  --color-primary-light: #ff6026;
+  --color-primary: #e6533c;
+  --color-primary-light: #e6533cd0;
   --color-secondary: #eee;
   --color-tertiary: #a9a9a9;
-  --color-gray: #555555;
-  --color-gray-dark: #1d1d1d;
+  --color-gray: #ffffff80;
+  --color-gray-dark: #222222;
   --color-black: #000;
 
   --padding-section: 10rem 0 10rem 0;
@@ -26,7 +29,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2rem;
   color: var(--color-secondary);
   background-color: var(--color-black);
@@ -152,6 +155,11 @@ img {
   background-color: var(--color-primary);
 }
 
+.menu-icon {
+  font-size: 3rem;
+  display: none;
+}
+
 /* Hero */
 .section-hero {
   display: flex;
@@ -171,6 +179,12 @@ img {
   color: var(--color-secondary);
   font-weight: 800;
   line-height: 1.3;
+}
+
+.hero-title-cursive {
+  font-family: 'Great Vibes', cursive;
+  font-size: 15rem;
+  font-weight: 400;
 }
 
 .btn-container {
@@ -315,14 +329,15 @@ img {
   grid-template-rows: repeat(2, 25rem);
 }
 
-.section-training-gallery-img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.section-training-gallery-img {
+  position: relative;
 }
 
 .section-training-gallery-img--1 {
   grid-column: 1 / 2;
+  background: url(../images/exercise1.jpg), rgba(6, 255, 210, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-training-gallery-img--2 {
@@ -343,6 +358,20 @@ img {
 
 .section-training-gallery-img--6 {
   grid-column: 4/ 5;
+}
+
+.section-training-gallery-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-training-gallery-img-text {
+  display: inline-block;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: var(--color-secondary);
 }
 
 /******** Section Calculate ********/

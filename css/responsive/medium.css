@@ -29,6 +29,10 @@
     display: none;
   }
 
+  .menu-icon {
+    display: block;
+  }
+
   .section-hero {
     flex-direction: column;
     gap: 10rem;

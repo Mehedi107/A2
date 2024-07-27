@@ -14,6 +14,10 @@
     font-size: 7.2rem;
   }
 
+  .hero-title-cursive {
+    font-size: 10rem;
+  }
+
   /******** Section Run ********/
   .section-run {
     padding: var(--padding-section);
