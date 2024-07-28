@@ -4,7 +4,7 @@
 /******** Shared Styles ********/
 :root {
   --color-primary: #e6533c;
-  --color-primary-light: #e6533cd0;
+  --color-primary-light: #ff5c43;
   --color-secondary: #eee;
   --color-tertiary: #a9a9a9;
   --color-gray: #ffffff80;
@@ -124,9 +124,10 @@ img {
 }
 
 .logo {
-  font-size: 3.6rem;
+  font-size: 4.2rem;
   color: var(--color-primary);
   font-weight: 800;
+  font-style: italic;
 }
 
 .nav-list {
@@ -506,6 +507,53 @@ select option {
   background-color: var(--color-primary-light);
 }
 
+/******** Section Pricing ********/
+
+.section-pricing {
+  text-align: center;
+  padding: var(--padding-section);
+}
+
+.pricing-card-container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.pricing-card {
+  background-color: var(--color-gray-dark);
+  padding: 10rem 5rem;
+  border-radius: 2rem;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+  justify-content: start;
+}
+
+.price {
+  display: block;
+  font-size: 6.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.duration {
+  margin: 0;
+  margin-top: -1rem;
+}
+
+.description {
+  margin: 0;
+}
+
+.btn-pricing {
+  margin-top: 1rem;
+}
+
 /******** Section Team ********/
 
 .section-team {
@@ -595,10 +643,11 @@ select option {
 }
 
 .copyright-text {
-  padding-top: 5rem;
+  padding-top: 4rem;
   border-top: 3px solid var(--color-gray);
   text-align: center;
   margin-top: 5rem;
+  font-size: 1.8rem;
 }
 
 /* 
